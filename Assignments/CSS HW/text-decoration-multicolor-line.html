@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .multicolor-lines::before,
+        .multicolor-lines::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 1px;
+        }
+
+        .multicolor-lines::before {
+            top: 0;
+            background-color: red;
+        }
+
+        .multicolor-lines::after {
+            bottom: 0;
+            background-color: blue;
+        }
+
+        .multicolor-lines {
+            position: absolute;
+            text-decoration: line-through;
+            color: green; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="multicolor-lines">
+            Hey buddy, light weight!.
+        </p>
+    </div>
+</body>
+</html>

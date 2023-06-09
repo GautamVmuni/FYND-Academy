@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid View</title>
+    <style>
+        .nav{grid-area: nav;}
+        .box1{grid-area: box1;}
+        .box2{grid-area: box2;}
+        .box3{grid-area: box3;}
+        .main{grid-area: main;}
+        .sidebar{grid-area: sidebar;}
+        .footer{grid-area: footer;}
+
+        .container{
+            display: grid;
+            height: 100vh;
+            text-align: center;
+            grid-template-rows: 0.3fr 1.5fr 2fr 0.8fr;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'box1 box2 box3 sidebar'
+            'main main main sidebar'
+            'footer footer footer footer';
+            gap: 5px;
+        }
+        .nav{
+            background-color: lightgreen;
+        }
+        .box1{
+            background-color: lightpink;
+        }
+        .box2{
+            background-color: bisque;
+            border-radius: 5px;
+        }
+        .box3{
+            background-color: lightsalmon;
+        }
+        .sidebar{
+            background-color: cadetblue;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+        }
+        .main{
+            background-color: lightgrey;
+        }
+        .container > div{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">Nav</div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+        <div class="main">Main</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

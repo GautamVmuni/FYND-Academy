@@ -1,0 +1,75 @@
+body{
+    background-color: aqua;
+}
+.cup-container{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background: transparent;
+    left: 30%;
+    margin-top: 10%;
+}
+.fogg-container{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    height: 200px;
+    width: 200px;
+}
+.fogg1{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: 100%;
+    opacity: 0.12;
+    left: 10%;
+}
+.fogg2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: 100%;
+    opacity: 0.12;
+    top: 10%;
+    right: 15%;
+}
+.fogg3{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: 100%;
+    opacity: 0.12;
+    left: 20%;
+    top: -20px;
+}
+.cup{
+    position: absolute;
+    background: #fff;
+    height: 170px;
+    width: 300px;
+    border-radius: 0px 0px 130px 130px;
+    margin-top: 50%;
+    margin-left: 25%;
+}
+.handle{
+    position: absolute;
+    background: transparent;
+    height: 48px;
+    width: 80px;
+    border: 11px solid #fff;
+    border-radius: 0px 20px 20px 0px;
+    left: 250px;
+}
+.saucer{
+    position: absolute;
+    background: #fff;
+    height: 30px;
+    width: 300px;
+    border-radius: 0px 0px 30px 30px;
+    top: 90%;
+    left: 0;
+    box-shadow: 0px 3px 4px 1px black;
+}

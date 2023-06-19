@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.platter{
+    height: 200px;
+    width: 700px;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 8%;
+    margin-left: 38%;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-name: platter;
+    transform: rotate(90deg);
+    /* visibility: hidden; */
+}
+.dish{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 19%;
+    left: 40%;
+    /* mix-blend-mode: multiply; */
+}
+
+.sidebar{
+    height: 100vh;
+    width: 650px;
+    position: absolute;
+    background-color: rgb(8, 125, 8);
+    top: 0;
+    left: 54%;
+}
+
+@keyframes platter{
+    0%{transform: rotate(90deg);}
+    100%{transform: rotate(-10deg);}
+} 
